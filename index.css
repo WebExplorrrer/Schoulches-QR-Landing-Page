@@ -1,7 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+ /* ================================
+   Base Grid
+   ================================ */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font
+}
+   .grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr; /* default: single column */
+}
+h1{
+    font-family:"GT Walsheim";
+    font-family: "GTWalsheim Pro", sans-serif;
+    font-weight: 700;
+}
+p, a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+/* ================================
+   📱 Phones
+   ================================ */
+
+/* Small/medium phones (≥ 360px) */
+@media (min-width: 360px) {
+  .grid-phone {
+    grid-template-columns: 1fr;
+  }
+  .intro p{
+        text-align: center;
+        line-height: 20px;
+        margin-bottom: 3%;
+    }
+    h1{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  p, a{
+    font-size: 0.8rem;
+  }
+  .map iframe{
+    width: 300px;
+    height: 300px;
+}
+}
+
+/* Large phones / phablets (≥ 600px) */
+@media (min-width: 600px) {
+  .grid-phone-lg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  h1{
+    font-size: 5rem;
+  }
+  
+}
+
+/* ================================
+   📲 Tablets
+   ================================ */
+
+/* Tablets - Portrait (≥ 768px) */
+@media (min-width: 768px) and (orientation: portrait) {
+  .grid-tablet-portrait {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets - Landscape (≥ 768px) */
+@media (min-width: 768px) and (orientation: landscape) {
+  .grid-tablet-landscape {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ================================
+   💻 Ultra-wide Tablets
+   ================================ */
+
+/* Ultra-wide tablets - Portrait (1024px–1365px) */
+@media (min-width: 1024px) and (max-width: 1365px) and (orientation: portrait) {
+  .grid-ultra-tablet-portrait {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Ultra-wide tablets - Landscape (1024px–1365px) */
+@media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  .grid-ultra-tablet-landscape {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ================================
+   🖥 Desktops
+   ================================ */
+
+/* Small desktops & laptops (≥ 1366px) */
+@media (min-width: 1366px) {
+  .grid-desktop {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Large desktops (≥ 1440px) */
+@media (min-width: 1440px) {
+  .grid-desktop-lg {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* Extra large desktops (≥ 1920px) */
+@media (min-width: 1920px) {
+  .grid-desktop-xl {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+/* Rest of styles */
+body{
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    padding: 2% 5%;
+}
+h1{
+    /* font-size: 40px; */
+    font-weight: 500;
+    line-height: ;
+    word-spacing: ;
+    letter-spacing: ;
+    white-space: nowrap;
+    padding: 2% 0;
+}
+a{
+    cursor:pointer;
+    text-decoration: none;
+    color:#070000;
+}
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    margin-top: 5%;
+    /* padding: 0 2%; */
+}
+.map a{
+    padding: 3% 0;
 }
