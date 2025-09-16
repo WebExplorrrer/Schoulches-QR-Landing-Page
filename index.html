@@ -1,36 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="icon" type="image/jpg" href="/assets/favicon.png">
-    <link rel="stylesheet" href="/assets/header font/stylesheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" type="image/jpg" href="/assets/favicon.png" />
+    <link rel="stylesheet" href="/assets/header font/stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4bb50c2001.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Welcome | Scoulches</title>
-</head>
-<body>
-   <header>
 
-   </header> 
-    <main>
-        <section>
+    <!-- Script for loader -->
+    <script>
+      window.addEventListener("load", function () {
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("content");
 
-        </section>
-     <section class="intro">
-         <h1>Welcome to Scoulches!</h1>
-         <p>We looove cooking, and you love eating - a match made in heaven😍</p> <p>Use links below to order, pay us a visit, check our updates, or just say hi! Save this page so your cravings never have to wait😉</p>
-         <a href="https://www.facebook.com/profile.php?id=61580624944627" target="blank"></a>
-     </section>
+        // fade out loader
+        loader.classList.add("fade-out");
+
+        // wait for fade to complete before removing and showing content
+        setTimeout(() => {
+          loader.style.display = "none";
+          content.style.display = "block";
+        }, 800); // match transition duration
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="loader">
+      <img src="/assets/favicon.png" alt="Loading..." />
+    </div>
+
+    <!-- Your main content -->
+    <header></header>
+    <main class="grid" id="content">
+      <section class="hero"></section>
+      <section class="intro">
+        <h1>Welcome to Scoulches! Hungry?</h1>
+        <p>We looove cooking, and you love eating - a match made in heaven😍</p>
+        <p>
+          Use links below to order, pay us a visit, check our updates, or just
+          say hi! Save this page so your cravings never have to wait😉
+        </p>
+        <a
+          href="https://www.facebook.com/profile.php?id=61580624944627"
+          target="blank"
+        ></a>
+      </section>
     </main>
 
     <section>
-        <div class="map">
-            <a href="https://maps.app.goo.gl/usYmVSL1VDS2fgZX8" target="_blank" rel="noopener noreferrer">Find & Visit Us</a>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.489148492736!2d3.5833097093720228!3d6.459539993505047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf9000f95e16f%3A0xe7f74f7a2dd15df1!2sScoulches!5e0!3m2!1sen!2sng!4v1757806062048!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="links">
+        <div class="link-item">
+          <a>🍚 See What's on the Menu</a> <i class="fas fa-arrow-right"></i>
         </div>
+        <div class="link-item">
+          <a>💬 Order, Say Hi & Enquire on WhatsApp</a
+          ><i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="link-item">
+          <a>🔥 Check Out Updates on Insta</a><i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="link-item">
+          <a href="https://g.page/r/CfFd0S16T_fnEAE/review" target="_blank"
+            >⭐ Tell Us How We Did</a
+          ><i class="fas fa-arrow-right"></i>
+        </div>
+      </div>
+      <div class="map">
+        <a
+          href="https://maps.app.goo.gl/usYmVSL1VDS2fgZX8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        🗺️Find & Visit Us <i class="fas fa-arrow-down"></i
+        ></a>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.489148492736!2d3.5833097093720228!3d6.459539993505047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf9000f95e16f%3A0xe7f74f7a2dd15df1!2sScoulches!5e0!3m2!1sen!2sng!4v1757806062048!5m2!1sen!2sng"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </section>
     <footer>
-        <p>&copy; 2024 Scoulches. All rights reserved.</p>
+      <p>&copy; 2025 Scoulches. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
