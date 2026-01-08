@@ -159,9 +159,12 @@ footer{
     line-height: 24px;
     font-size: 0.9rem;
   }
+  .social_media p{
+    margin: 5% 0;
+  }
   .social_links{
     display: flex;
-    gap: 5%;
+    gap: 10%;
     justify-content: center;
     user-select: none;
   }
